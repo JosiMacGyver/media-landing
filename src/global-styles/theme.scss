@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+}
+:root {
+--primary-color: #000917;
+--white: #FFFFFF;
+}
+
+.font-weight-400 { font-family: 'Manrope Regular'; }
+.font-weight-500 { font-family: 'Manrope Medium'; }
+.font-weight-600 { font-family: 'Manrope SemiBold'; }
+.font-weight-700 { font-family: 'Manrope Bold'; }
+
+h6, h5, h4, h3, h2, h1 { @extend .font-weight-700; }
+h3, h2, h1 { line-height: auto; }
+h6, h5, h4 { line-height: 1.5; }
+h6 { font-size: 16px; }
+h5 { font-size: 20px; }
+h4 { font-size: 24px; }
+h3 { font-size: 32px; }
+h2 { font-size: 48px; }
+h1 { font-size: 64px; }
+
+.p5, .p4, .p3, .p2, .p1 { line-height: 1.5; }
+.p5, .p4, .p3, .p2 { @extend .font-weight-500; }
+.p5 { font-size: 12px; }
+.p4 { font-size: 14px; }
+.p3 { font-size: 16px; }
+.p2 { font-size: 18px; }
+.p1 {
+  @extend .font-weight-400;
+  font-size: 24px;
+}
+
+.round-sm, .round-sm-t, .round-sm-tl { border-top-left-radius: 4px; }
+.round-sm, .round-sm-t, .round-sm-tr { border-top-right-radius: 4px; }
+.round-sm, .round-sm-b, .round-sm-bl { border-bottom-left-radius: 4px; }
+.round-sm, .round-sm-b, .round-sm-br { border-bottom-right-radius: 4px; }
+.round-md, .round-md-t, .round-md-tl { border-top-left-radius: 8px; }
+.round-md, .round-md-t, .round-md-tr { border-top-right-radius: 8px; }
+.round-md, .round-md-b, .round-md-bl { border-bottom-left-radius: 8px; }
+.round-md, .round-md-b, .round-md-br { border-bottom-right-radius: 8px; }
+.round-lg, .round-lg-t, .round-lg-tl { border-top-left-radius: 16px; }
+.round-lg, .round-lg-t, .round-lg-tr { border-top-right-radius: 16px; }
+.round-lg, .round-lg-b, .round-lg-bl { border-bottom-left-radius: 16px; }
+.round-lg, .round-lg-b, .round-lg-br { border-bottom-right-radius: 16px; }
+.round-xl, .round-xl-t, .round-xl-tl { border-top-left-radius: 40px; }
+.round-xl, .round-xl-t, .round-xl-tr { border-top-right-radius: 40px; }
+.round-xl, .round-xl-b, .round-xl-bl { border-bottom-left-radius: 40px; }
+.round-xl, .round-xl-b, .round-xl-br { border-bottom-right-radius: 40px; }
+
+.shadow-sm { filter: drop-shadow(0px 4px 15px rgba(10, 53, 66, 0.10)); }
+.shadow-md { filter: drop-shadow(2px 2px 20px rgba(10, 53, 66, 0.10)); }
+.shadow-lg { filter: drop-shadow(0px 16px 25px rgba(10, 53, 66, 0.20)); }
+.shadow-xl { filter: drop-shadow(0px 16px 30px rgba(10, 53, 66, 0.25)); }
+
+.custom-head { background: var(--color-primary-dark); }
+.custom-menu { background: var(--color-primary-dark); }
+.custom-foot { background: var(--color-primary-dark); }
+.custom-submenu { background: var(--color-primary-0); }
+
+// Default (Texts in general)
+
+.text-default-small {
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: 'Manrope Regular';
+}
+
+.text-default-regular {
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: 'Manrope Regular';
+}
+
+.text-default-medium {
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: 'Manrope Regular';
+}
+
+.text-default-large {
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: 'Manrope Regular';
+}
+
+// Emphasis (Titles, labels, and strong texts in general)
+
+.text-emphasis-micro {
+  font-size: 8px;
+  line-height: 1.5;
+  font-family: 'Manrope Medium';
+}
+
+.text-emphasis-extra-small {
+  font-size: 10px;
+  line-height: 1.2;
+  font-family: 'Manrope Medium';
+}
+
+.text-emphasis-small {
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: 'Manrope Medium';
+}
+
+.text-emphasis-regular {
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: 'Manrope Medium';
+}
+
+.text-emphasis-medium {
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: 'Manrope Medium';
+}
+
+.text-emphasis-large {
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: 'Manrope Medium';
+}
+
+.text-emphasis-extra-large {
+  font-size: 22px;
+  line-height: 1.2;
+  font-family: 'Manrope Medium';
+}
+
+.text-emphasis-huge {
+  font-size: 28px;
+  line-height: 1.2;
+  font-family: 'Manrope Medium';
+}
+
+
+html,
+body {
+  @extend .text-default-medium;
+  background: var(--white);
+}
+  
+button.primary {
+  padding: 10px;
+  border: solid 1px var(--white);
+  background: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+}
+select{
+  @extend .font-weight-500;
+  @extend .round-md;
+  padding: 10px;
+  width: 189px;
+  height: 52px;
+  padding: 0px 24px;
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+  border: solid 1px var(--white);
+  background: var(--primary-color);
+  color:var(--white);
+  cursor: pointer;
+  appearance: none;
+
+  
+}
+  
